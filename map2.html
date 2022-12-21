@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="font.css">
+   <meta charset="UTF-8">
+   <title>Bangtan Hospital: Where Healing Comes From the Heart</title>
+</head>
+<body>
+   <nav id="nav" class="section">
+      <img src="images/logo.png" >
+      <div id="nav-text">
+         <a href="index.html#nav">Home</a> | 
+         <a href="index.html#guide" >Patient's Guide</a> | 
+         <a href="index.html#fas">Facilities and Services</a> | 
+         <a href="index.html#naa">News and Articles</a> | 
+         <a href="index.html#contact">Contact</a> | 
+      </div>
+   </nav>
+   <span class="welcome" style="padding: 0px 10px;">Bangtan Hospital Map</span>
+   <p id="mtitle"style="padding-top: 10px;">Second Floor</p>
+   <img id="map1" src="images/2.jpg" usemap="#map-1">
+   <map name="map-1" class="mapping">
+      <area id="a" shape="rect" coords="142,0,600,117" onmouseover="javascript:document.getElementById('mtitle').innerHTML = 'Respiratory Therapy Department';" onmouseout="javascript:document.getElementById('mtitle').innerHTML = 'SECOND FLOOR';">
+      <area id="a" shape="rect" coords="144,152,523,259" onmouseover="javascript:document.getElementById('mtitle').innerHTML = 'Bone, Muscle, and Joint Center';" onmouseout="javascript:document.getElementById('mtitle').innerHTML = 'SECOND FLOOR';">
+      <area id="a" shape="rect" coords="0,309,288,449" onmouseover="javascript:document.getElementById('mtitle').innerHTML = 'Gastrointestinal Medicine';" onmouseout="javascript:document.getElementById('mtitle').innerHTML = 'SECOND FLOOR';">
+      <area id="a" shape="rect" coords="337,310,599,449" onmouseover="javascript:document.getElementById('mtitle').innerHTML = 'Hemodialysis Unit';" onmouseout="javascript:document.getElementById('mtitle').innerHTML = 'SECOND FLOOR';">
+   </map>
+   <div id="floor">
+      <a href="map1.html">1st Floor</a> |
+      <a href="map2.html">2nd Floor</a> |
+      <a href="map3.html">3rd Floor</a> |
+      <a href="map4.html">4th Floor</a> 
+   </div>
+
+   <a id="map-link" href="center.html">< Back to "Centers and Facilities" page</a>
+   
+   <div id="info">
+      <div id="image">
+         <h2>BANGTAN HOSPITAL</h2>
+         <img src="images/hospital.png">
+      </div>
+      <p>
+         At BANGTAN HOSPITAL, we put your well-being as our priority. With the country's top healing professionals and state-of-the-art medical equipment and facilities, we strive to give only the best to our patients. With compassionate healthcare at the core of everything we do, we promise only our utmost care to every person who walk through our doors. 
+      </p>
+      <div id="contact-map">
+         <h2>CONTACT INFORMATION</h2>
+         <img src="images/map.png">
+
+         <div class="c-icons">
+            <img src="images/con1.png" class="icons">
+            <span class="details">&nbsp;#69 80 Feet Main Road, Manila, Philippines</span>
+         </div>
+         <div class="c-icons">
+            <img src="images/con2.png" class="icons" style="width: 5%;">
+            <span class="details">(02) 123-4567</span>
+         </div>
+         <div class="c-icons">
+            <img src="images/con3.png" class="icons" style="width: 5%;">
+            <span class="details">customerservice@bangtanhospital.com.ph</span>
+         </div>
+      </div>
+
+      <div id="centers">
+         <h2>OUR CENTERS</h2>
+         <ul>
+            <li>Cancer Care Center</li>
+            <li>Radiology and Imaging Department</li>
+            <li>Cardiovascular Catheterization and Intervention Center</li>
+            <li>Center for Women's Health</li>
+         </ul>
+         <a href="#">VIEW OUR CENTERS</a>
+      </div>
+   </div>
+   <div id="footer">
+      <span>© Copyright 2018 | BANGTAN HOSPITAL | All Rights Reserved</span>
+   </div>
+
+   <script src="jquery-3.3.1.js"></script>
+   <script src="jq.js"></script>
+
+   <script>
+      window.onscroll = function() {myFunction()};
+
+      var nav = document.getElementById("nav-text");
+      var sticky = nav.offsetTop;
+
+      function myFunction() {
+         if (window.pageYOffset > sticky) {
+            nav.classList.add("sticky");
+         } 
+         else {
+            nav.classList.remove("sticky");
+         }
+      }
+
+
+      
+  </script>
+</body>
+</html>

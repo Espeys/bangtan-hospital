@@ -1,0 +1,936 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#wrapper {
+	width: 1366px;
+	margin: auto;
+}
+
+nav{
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: mont-med;
+	height: 125px;
+	font-size: 10pt;
+	display: block;
+}
+
+nav img{
+	width:25%;
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+}
+
+div#nav-text {
+	width: 100%;
+	display: block;
+	background-color: white;
+	padding: 20px 0px;
+	box-shadow: 0px 3px rgba(0,0,0,0.3);
+	z-index: 10;
+}
+
+div#nav-text a{
+	padding: 20px;
+	color: #898989;
+	text-decoration: none;
+	transition: font 0.5s;
+}
+
+div#nav-text a:hover{ 
+	font: 13pt mont-bold;
+	color: #ceb3d2;
+	
+}
+
+.active {
+	font-family: mont-bold;
+	font-size: 13pt;
+	color: #ceb3d2;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+div#banner {
+	height:500px;
+	background: url("images/banner.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+div#banner img {
+	width: 100%;
+}
+
+div#sub-banner {
+	width: 45%;
+	height: 100%;
+	background-image: linear-gradient(90deg, rgba(206,179,210,0.8), rgba(165,200,232,0.8));
+}
+
+div#sub-banner span#tag1{
+	font-family: lovelo-black;
+	display: block;
+	padding: 80px 0px 0px 40px;
+	color: #3c3c3c;
+	font-size: 20pt;
+}
+
+div#sub-banner span#tag2{
+	font-family: lovelo-line;
+	display: block;
+	padding: 40px 0px 0px 40px;
+	color: #fff;
+	font-size: 34pt;
+}
+
+div#sub-banner span#tag3{
+	font-family: mont-light;
+	display: block;
+	padding: 40px 0px 30px 40px;
+	color: #fff;
+	font-size: 14pt;
+}
+
+div#guide{
+	height: 600px;
+	position: relative;
+}
+
+span.welcome{
+	padding: 60px 0px 20px 0px;
+	display: block;
+	text-align: center;
+	font-family: lovelo-line;
+	font-size: 35pt;
+	word-spacing: 20px;
+}
+
+hr.divider{
+	width: 20%;
+	margin: auto;
+	background-image: linear-gradient(to right, rgb(206,179,210), rgb(165,200,232));
+	height: 3px;
+	border: none;
+}
+
+p.desc{
+	padding-top: 30px;
+	text-align: center;
+	font-family: mont-light;
+	font-size: 12pt;
+}
+
+div#guide img#bgguide{
+	width: 100%;
+	opacity: 0.3;
+}
+
+.group-cards{
+	margin: auto;
+	width: 1200px;
+	margin-top: 30px;
+	height: 230px;
+}
+
+.group-cards-2{
+	margin: auto;
+	width: 900px;
+	margin-top: 30px;
+}
+
+div#guide div.group-cards .gcard{
+	width: 250px;
+	height: 100px;
+	float: left;
+	margin: 20px;
+}
+
+div#guide div.group-cards .gcard img{
+	margin: auto;
+	display: block;
+}
+
+div#guide div.group-cards .gcard span{
+	font-family: mont-med;
+	font-size: 11pt;
+	padding-top: 20px;
+	display: block;
+	text-align: center;
+}
+
+div#guide div.group-cards .gcard p{
+	font-family: mont-light;
+	font-size: 10pt;
+	padding-top: 15px;
+	display: block;
+	text-align: center;
+	line-height: 18pt;
+}
+
+
+div#fas{
+	height: 800px;
+	width: 100%;
+	position: relative;
+}
+
+div#fas .card{
+	width: 350px;
+	height: 50px;
+	float: left;
+	margin: 20px;
+}
+
+div#fas .card img{
+	margin: auto;
+	display: block;
+}
+
+div#fas .card span{
+	font-family: mont-med;
+	font-size: 11pt;
+	padding-top: 20px;
+	display: block;
+	text-align: center;
+}
+
+div#fas .card p{
+	font-family: mont-light;
+	font-size: 10pt;
+	padding-top: 15px;
+	display: block;
+	text-align: center;
+	line-height: 18pt;
+}
+
+div#fas .card p{
+	font-family: mont-light;
+	font-size: 10pt;
+	padding-top: 5px;
+	display: block;
+	text-align: center;
+	line-height: 18pt;
+}
+
+div#fas img#bgfas{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+div#fas img#bgfas{
+	width: 100%;
+	opacity: 0.3;
+	margin-top: -400px;
+}
+
+div#creed{
+	height: 450px;
+	background: url(images/creed.jpg)no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	z-index: 8;
+
+}
+
+div.filter{
+	width: inherit;
+	height: inherit;
+	background-color: rgba(0,0,0, 0.5);
+	color: white;
+}
+
+div.filter span#creed-title{
+	font-family: lovelo-line;
+	font-size: 40pt;
+	text-align: center;
+	display: block;
+	padding: 80px 0px 20px 0px;
+}
+
+div.filter hr#creed-divider{
+	width: 20%;
+	margin: auto;
+	background-color: white;
+	height: 3px;
+	border: none;
+}
+
+div.filter p#creed-desc{
+	padding: 50px 0px 30px 0px;
+	text-align: center;
+	font-family: mont-light;
+	font-size: 12pt;
+}
+
+div.filter img#play{
+	margin: auto;
+	display: block;
+	cursor: pointer;
+}
+
+div#naa{
+	height: 700px;
+	z-index: 8;
+	position: relative;
+}
+
+div#naa img#naa-bg{
+	width: 100%;
+	opacity: 0.2;
+	position: absolute;
+	top: 80px;
+	left: 0px;
+}
+
+.container {
+	width: 1000px;
+	margin: auto;
+}
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.slider ul {
+	list-style: outside none;
+	padding: 0;
+	margin: 0;
+	width: 10000%;
+	position: relative;
+	top: 0;
+	right: 0;
+	transition: all 0.6s ease;
+}
+
+.slider li {
+	float: left;
+}
+
+.prev{
+	position: relative;
+	top:-280px; 
+	left: -50px;
+	text-decoration: none;
+	font-size: 50px;
+	font-family: mont-bold;
+	color: #ceb3d2;
+}
+
+.prev:hover {
+	color: #a5c8e8;
+}
+
+.next{
+	position: relative;
+	top:-280px; 
+	left: 99%;
+	text-decoration: none;
+	font-size: 50px;
+	font-family: mont-bold;
+	color: #ceb3d2;
+}
+
+.next:hover {
+	color: #a5c8e8;
+}
+
+div.box {
+	width: 300px;
+	height: 450px;
+	text-align: center;
+	padding: 10px;
+	background-color: white;
+	border: 2px solid rgba(0,0,0,0.1)
+}
+
+div.box img{
+	max-width: 100%;
+	height: 200px;
+}
+
+div.box span{
+	padding: 20px 0px 20px 0px;
+	display: block;
+	font-size: 12pt;
+	font-family: mont-med;
+	line-height: 20pt;
+	text-transform: uppercase;
+}
+
+div.box p{
+	font-size: 12pt;
+	font-family: mont-light;
+	line-height: 18pt;
+}
+
+div.box a{
+	font-family: mont-med;
+	text-decoration: none;
+	color: #a5c8e8;
+}
+
+div.box a:hover {
+	color: #ceb3d2;
+	text-decoration: underline;
+	font-family: mont-bold;
+}
+
+div#contact {
+	height: 700px;
+	background: url(images/c1.jpg) no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+a#button-mid {
+	font-family: mont-med;
+	padding: 10px;
+	position: absolute;
+	left: 43%;
+	top: 550px;
+	padding: 10px;
+	color: white;
+	background-color: #594d5b;
+	text-decoration: none;
+	z-index: 1;
+	border-radius: 10px;
+}
+
+a#button-mid1 {
+	font-family: mont-med;
+	padding: 10px;
+	position: absolute;
+	left: 47%;
+	top: 720px;
+	padding: 10px;
+	color: white;
+	background-color: #594d5b;
+	text-decoration: none;
+	z-index: 1;
+	border-radius: 10px;
+}
+
+div.filter span#contact-title{
+	font-family: lovelo-line;
+	font-size: 40pt;
+	text-align: center;
+	display: block;
+	padding: 60px 0px 20px 0px;
+}
+
+div.filter hr#contact-divider{
+	width: 20%;
+	margin: auto;
+	background-color: white;
+	height: 3px;
+	border: none;
+}
+
+div.filter p#contact-desc{
+	padding: 30px 0px 10px 0px;
+	text-align: center;
+	font-family: mont-light;
+	font-size: 12pt;
+}
+
+div.filter form{
+	margin: auto;
+	width: 800px;
+	margin-top: 20px;
+
+}
+
+div.filter form input, textarea{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+div.filter form input#name{
+	width: 100%;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+	font-family: mont-med;
+	font-size: 14px;
+}
+
+div.filter form input#phone{
+	width: 300px;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+	font-family: mont-med;
+	font-size: 14px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+div.filter form input#email{
+	width: 480px;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+	font-family: mont-med;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-left: 15px;
+	display: inline-block;
+}
+
+div.filter form textarea#message{
+	width: 325px;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	padding: 10px;
+	border: 1px solid white;
+	font-family: mont-med;
+	font-size: 14px;
+	margin-top: 15px;
+	display: inline-block;
+	resize: none;
+	width: 100%;
+}
+
+div.filter form a{
+	padding: 15px 25px;
+	text-decoration: none;
+	color: white;
+	background-color: #594d5b;
+	font-family: mont-med;
+	font-size: 25px;
+	display: block;
+	margin-top: 20px;
+	text-align: center;
+	border-radius: 15px;
+	text-align: center;
+}
+
+::placeholder {
+	font-family: mont-med;
+	color: white;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { 
+	font-family: mont-med;
+	color: white;
+}
+
+::-ms-input-placeholder { 
+	font-family: mont-med;
+	color: white;
+}
+
+div#testimonial {
+	height: 450px;
+	position: relative;
+}
+
+div#testimonial img#sidepic{
+	height: 100%;
+	z-index: 5;
+	float: left;
+
+}
+
+div#testimonial img#testimonial-background{
+	opacity: 0.2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -6;
+	width: 100%;
+}
+
+div#testimonial div#testimonial-desc{
+	width: 600px;
+	height: 350px;
+	padding: 50px;
+	float: left;
+	text-align: center;
+}
+
+div#testimonial p.desc{
+	padding-top: 30px;
+	text-align: center;
+	font-family: mont-light;
+	font-size: 12pt;
+	font-style: italic;
+	line-height: 25pt;
+}
+
+div#testimonial div#bar{
+	background: url(images/bar.png) no-repeat;
+	background-size: contain;
+	margin-top: 20px;
+	width: 100%;
+	height: 100px;
+}
+
+div#info {
+	height: 300px;
+	margin-top: 40px;
+	background-image: linear-gradient(90deg, rgba(206,179,210,0.8), rgba(165,200,232,0.8));
+}
+
+div#info div#image {
+	width: 300px;
+	padding: 20px;
+	float: left;
+	margin-left: 45px;
+}
+
+div#info div#image img {
+	width: 100%;
+}
+
+div#info div#image h2 {
+	font-family: mont-med;
+	text-align: right;
+	border-right: 3px solid white;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	display: block;
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+div#info p {
+	font-family: mont-light;
+	font-size: 10pt;
+	width: 250px;
+	float: left;
+	line-height: 23px;
+	padding-top: 20px;
+	text-align: justify;
+	text-justify: inter-word;
+	margin-left: 15px;
+}
+
+div#info div#contact-map {
+	width: 300px;
+	float: left;
+	margin-left: 35px;
+
+}
+
+div#info div#contact-map img {
+	width: 100%;
+}
+
+div#info div#contact-map h2 {
+	font-family: mont-med;
+	border-right: 3px solid white;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	display: block;
+	font-size: 16pt;
+	text-justify: inter-word;
+	word-spacing: 5px;
+	margin-top: 20px;
+	font-weight: normal;
+}
+
+div#info div#contact-map img.icons {
+	width: 3%; 
+	margin-top: 5px;
+}
+
+div#info div#contact-map span.details {
+	font-family: mont-light;
+	font-size: 9.5pt; 
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+div#info div#contact-map .c-icons {
+	display: flex;
+	align-items:center;
+	padding-top: 5px;
+}
+
+div#info div#centers {
+	width: 250px;
+	float: left;
+	margin-left: 35px;
+}
+
+div#info div#centers h2{
+	font-family: mont-med;
+	border-right: 3px solid white;
+	padding-right: 10px;
+	margin-bottom: 15px;
+	display: block;
+	font-size: 16pt;
+	text-justify: inter-word;
+	letter-spacing: 5px;
+	word-spacing: 5px;
+	margin-top: 20px;
+	font-weight: normal;
+}
+
+div#info div#centers ul{
+	font-family: mont-light;
+	list-style-type: square;
+	line-height: 30px;
+	font-size: 10pt;
+}
+
+div#info div#centers a{
+	font-family: mont-med;
+	list-style-type: square;
+	padding: 10px;
+	display: block;
+	margin-top: 10px;
+	font-size: 14pt;
+	text-decoration: none;
+	color: white;
+}
+
+div#info div#centers a:hover{
+	text-decoration: underline;
+}
+
+div#footer {
+	height: 50px;
+	background-color: #24282b;
+	width: 100%;
+	text-align: center;
+	font-family: mont-med;
+	color: white;
+	padding-top: 30px;
+}
+
+div#coe-banner {
+	height:300px;
+	background: url("images/coe.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+div#coe-banner img {
+	width: 100%;
+}
+
+div#coe-sub-banner {
+	width: 45%;
+	height: 100%;
+	background-image: linear-gradient(90deg, rgba(206,179,210,0.8), rgba(165,200,232,0.8));
+}
+div#coe-sub-banner span#tag1{
+	font-family: lovelo-line;
+	display: block;
+	padding: 40px 0px 0px 40px;
+	color: #fff;
+	font-size: 34pt;
+}
+
+div#coe-sub-banner span#tag2{
+	font-family: mont-light;
+	display: block;
+	padding: 40px 0px 30px 40px;
+	color: #fff;
+	font-size: 14pt;
+}
+
+img#map1 {
+	width: 600px;
+	margin: auto;
+	display: block;
+	margin-top: 20px;
+}
+
+area {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+area[title]:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+
+p#p{
+	padding-top: 30px;
+	text-align: center;
+	font-family: mont-light;
+	font-size: 12pt;
+}
+
+p#mtitle{
+	padding-top: 30px;
+	text-align: center;
+	font-family: mont-bold;
+	font-size: 16pt;
+	text-transform: uppercase;
+	color: #ceb3d2;
+}
+
+div#floor{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+div#floor a{
+	font-family: mont-bold;
+	text-decoration: underline;
+	color: black;
+}
+
+div#floor a:hover{
+	color: #ceb3d2;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    
+}
+
+.modal-content video{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div#service {
+	margin: auto;
+	display: block;
+	width: 1000px;
+	height: 1000px;
+
+}
+
+div#service #g-s-cards {
+	margin: auto;
+	display: block;
+	width: 900px;
+}
+
+div#service .s-cards {
+	width: 180px;
+	height: 200px;
+	padding: 10px;
+	border: 2px solid rgba(0,0,0,0.2);
+	margin:20px 10px 0px 10px;
+	float: left;
+}
+
+div#service .s-cards img {
+	margin: auto;
+	display: block;
+}
+
+div#service .s-cards span {
+	font-family: mont-med;
+	text-align: center;
+	display: block;
+}
+
+a#map-link {
+	padding-top: 30px;
+	text-align: center;
+	font-family: mont-bold;
+	font-size: 12pt;
+	text-decoration: none;
+	color: #ceb3d2;
+	display: block;
+	text-align: center;
+}
+
+a#map-link:hover {
+	text-decoration: underline;
+	color: #a5c8e8;
+}
+
+iframe{
+	width: 900px;
+	height: 500px;
+	margin: auto;
+	display: block;
+	border: 5px solid #ceb3d2;
+
+}
+
+article {
+	width: 1200px;
+	height: 700px;
+	padding: 50px;
+}
+
+article img {
+	width: 700px;
+}
+
+
+article h1 {
+	font-family: mont-med;
+	padding: 10px;
+	font-size: 30pt;
+}
+
+article p {
+	font-family: mont-light;
+	line-height: 30px;
+	padding: 10px;
+}
+
+
+

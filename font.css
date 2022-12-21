@@ -1,0 +1,24 @@
+@font-face {
+    font-family: lovelo-black;
+    src: url(fonts/LoveloBlack.ttf);
+}
+
+@font-face {
+    font-family: lovelo-line;
+    src: url(fonts/LoveloLineLight.ttf);
+}
+
+@font-face {
+    font-family: mont-light;
+    src: url(fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: mont-bold;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: mont-med;
+    src: url(fonts/Montserrat-Medium.ttf);
+}

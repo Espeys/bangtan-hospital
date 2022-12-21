@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vanilla Slider Demo</title>
+
+  <style>
+    .container {
+      width: 1000px;
+      margin: 100px auto;
+      font-family: sans-serif;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      border: 1px dashed blue;
+
+      margin-bottom: 100px;
+    }
+
+    .slider ul {
+      list-style: outside none;
+      padding: 0;
+      margin: 0;
+      width: 10000%;
+      position: relative;
+      top: 0;
+      right: 0;
+      transition: all 0.6s ease;
+    }
+
+    .slider li {
+      float: left;
+    }
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #888;
+      color: #fff;
+      text-align: center;
+      line-height: 200px;
+      font-size: 32px;
+    }
+
+
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Horizontal Carousel</h1>
+    <a href="#" class="prev">Prev</a>
+    <a href="#" class="next">Next</a>
+    <br>
+    <br>
+    <div class="slider">
+      <ul>
+        <li>
+          <div class="box">1</div>
+        </li>
+        <li>
+          <div class="box">2</div>
+        </li>
+        <li>
+          <div class="box">3</div>
+        </li>
+        <li>
+          <div class="box">4</div>
+        </li>
+        <li>
+          <div class="box">5</div>
+        </li>
+        <li>
+          <div class="box">6</div>
+        </li>
+        <li>
+          <div class="box">7</div>
+        </li>
+        <li>
+          <div class="box">8</div>
+        </li>
+      </ul>
+    </div>
+
+    
+  </div>
+
+  <script src="vanilla-slider.js"></script>
+  <script>
+
+    var slider = new Slider('.slider', {
+      visibles: 4,
+      controlNext: '.next',
+      controlPrev: '.prev'
+    });
+
+
+
+
+  </script>
+</body>
+</html>
