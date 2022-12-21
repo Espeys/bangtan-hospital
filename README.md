@@ -1,2 +1,2 @@
 # Bangtan Hospital Website
-A sample informational hospital website
+A sample hospital's informational website
